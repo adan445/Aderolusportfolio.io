@@ -1,0 +1,137 @@
+/* Base reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Lato', sans-serif;
+  background: linear-gradient(to bottom right, #f7f9fb, #dbe9f4);
+  color: #333;
+  line-height: 1.7;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, #003366, #005fa3);
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+header img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-top: 1rem;
+}
+
+/* Navigation */
+nav.sitenavigation {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  background-color: #004080;
+  padding: 1rem;
+}
+
+nav.sitenavigation a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+nav.sitenavigation a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background-color: #ffcc00;
+  transition: 0.3s ease;
+}
+
+nav.sitenavigation a:hover {
+  color: #ffcc00;
+}
+
+nav.sitenavigation a:hover::after {
+  width: 100%;
+}
+
+/* Main Section */
+section#about {
+  max-width: 900px;
+  margin: 2rem auto;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+section#about h2 {
+  text-align: center;
+  color: #003366;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+section#about p {
+  margin-bottom: 1.25rem;
+  font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+  background-color: #003366;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+footer a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Social Icons */
+.fa {
+  padding: 12px;
+  font-size: 24px;
+  margin: 0 6px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.fa:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
